@@ -46,7 +46,7 @@ const Page = () => {
       //proceed
       const jwt = localStorage.getItem('tkn')
       if (jwt) {
-          const req = await fetch(`${process.env.NEXT_PUBLIC_API }/api/delete`,{
+          const req = await fetch(`api/delete`,{
             method: 'POST',
             headers: {
               'Accept': 'application/json',
