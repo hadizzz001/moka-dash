@@ -24,7 +24,7 @@ function Order(){
   // console.log('items: ', items);
   const getOrders = async () => {
 
-    const req = await fetch('https://oxinab-dashboard.netlify.app/api/getallorders');
+    const req = await fetch('https://moka-dash.netlify.app/api/getallorders');
     const res = await req.json()
     res.forEach((item:any) =>{
       // console.log('item: ', item);
