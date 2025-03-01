@@ -22,7 +22,7 @@ const Page = () => {
   }
   // const onSubmit = ()
   const fetchAll = async () => {
-    const req = await fetch(`${process.env.NEXT_PUBLIC_URL }/api/getall1`)
+    const req = await fetch(`api/getall1`)
     const res = await req.json()
     // console.log('res: ', res);
     setData(res)
