@@ -22,7 +22,7 @@ const Page = () => {
   }
   // const onSubmit = ()
   const fetchAll = async () => {
-    const req = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/getall1`)
+    const req = await fetch(`${process.env.NEXT_PUBLIC_URL }/api/getall1`)
     const res = await req.json()
     // console.log('res: ', res);
     setData(res)
@@ -46,7 +46,7 @@ const Page = () => {
       //proceed
       const jwt = localStorage.getItem('tkn')
       if (jwt) {
-          const req = await fetch(`${process.env.NEXT_PUBLIC_API || 'http://localhost:3000'}/api/delete1`,{
+          const req = await fetch(`${process.env.NEXT_PUBLIC_API }/api/delete1`,{
             method: 'POST',
             headers: {
               'Accept': 'application/json',

@@ -30,7 +30,7 @@ const Login = () => {
     onSubmit: async (values,{setSubmitting}) => {
 
       // console.log('values: ', values);
-      const rawResponse = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/login`, {
+      const rawResponse = await fetch(`${process.env.NEXT_PUBLIC_URL }/api/login`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

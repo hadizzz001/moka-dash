@@ -29,7 +29,7 @@ import UploadVideo from './UploadVideo';
     const getItem = async () => {
       try {
 
-    const req= await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/getbyid1?pid=${id}`)
+    const req= await fetch(`${process.env.NEXT_PUBLIC_URL }/api/getbyid1?pid=${id}`)
     const res = await req.json()
     console.log('res: ', res);
     if (res) {
@@ -95,7 +95,7 @@ const onSubmit = async (e:any)=>{
 //     images: [...imgs]
 // });
 
-const req = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/${id && mode === 'edit' ? `update1?pid=${id}`: `save1`}`,{
+const req = await fetch(`${process.env.NEXT_PUBLIC_URL }/api/${id && mode === 'edit' ? `update1?pid=${id}`: `save1`}`,{
   method: 'POST',
   headers: {
     'Accept': 'application/json',
