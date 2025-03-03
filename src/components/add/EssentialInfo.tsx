@@ -286,7 +286,7 @@ setDisabled(false)
     onChange={handleChange}
   >
     <MenuItem  value={'Coffee'}>Coffee</MenuItem>
-    {['Coffee machine', 'espresso pod', 'Espresso capsules', 'Machine spareparts', 'Discount sales', 'Cold & beverage', 'Tea & leaves'].map((item:string) =>{
+    {['Coffee machine', 'espresso pod', 'Espresso capsules', 'Machine spareparts', 'Discount sales', 'Cold and beverage', 'Tea and leaves'].map((item:string) =>{
 
 return    <MenuItem
 key={item}
